@@ -1,0 +1,34 @@
+// //setup
+@import "./setup/variables.scss";
+@import "./setup/functions.scss";
+@import "./setup/mixins.scss";
+
+//basics
+@import "./basics/helpers.scss";
+@import "./basics/layout.scss";
+@import "./basics/base.scss";
+@import "./basics/links.scss";
+@import "./basics/buttons.scss";
+@import "./basics/typography.scss";
+@import "./basics/form.scss";
+
+//cmps
+@import "./cmps/header.scss";
+@import "./cmps/footer.scss";
+@import "./cmps//itemPreview.scss";
+@import "./cmps/filter.scss";
+@import "./cmps/innerNavbar.scss";
+@import "./cmps/cart.scss";
+@import "./cmps/wishlist.scss";
+@import "./cmps/loading.scss";
+@import "./cmps/search-image.scss";
+@import "./cmps/labels.scss";
+@import "./cmps/noItems.scss";
+
+// // //pages
+@import "./pages/home.scss";
+@import "./pages/shop.scss";
+@import "./pages/itemDetails.scss";
+@import "./pages/shopItems.scss";
+@import "./pages/dashboard.scss";
+@import "./pages/signup.scss";

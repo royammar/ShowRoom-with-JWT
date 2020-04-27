@@ -1,0 +1,23 @@
+.noitems{
+    img{
+        width:36%;
+    }
+.noitems-txt{
+    width: 100%;
+    margin-left: 70px;
+    font-size:18px;
+    line-height: 10px;
+    color:$clr3;
+    // font-family:Lobster;
+}
+.noitems-p{
+    position: relative;
+    bottom: 50px; 
+}
+    .oops{
+        line-height: 0px;
+        color:$clr1;
+        font-size: 200px;
+        font-family:Lobster;
+    }
+}

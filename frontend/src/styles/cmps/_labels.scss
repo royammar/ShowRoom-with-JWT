@@ -1,0 +1,25 @@
+.labels {
+  padding-top: 20px;
+  z-index: 3;
+  position: relative;
+  bottom: 45px;
+  color: $clr1;
+
+  button {
+    background-color: rgba(204, 204, 204, 0.7);
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px;
+    // @include for-mobile-layout {
+    //   margin-top: 40px;
+    //   font-size: rem(12px);
+    // }
+    // @include for-normal-layout {
+    //   margin-top: 20px;
+    //   font-size: rem(14px);
+    // }
+    // @include for-wide-layout {
+    //   font-size: rem(18px);
+    // }
+  }
+}

@@ -1,0 +1,188 @@
+.main-section {
+  height: 450px;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+.hot-product{
+  background-color: $clr4;
+}
+
+.home-categories {
+  div {
+    background-color: lightcyan;
+  }
+  display: grid;
+
+    @include  for-mobile-layout {
+      min-height: 400px;
+      grid-template-columns:100vw;
+      grid-template-rows: 20px;
+      grid-template-areas:
+      "b b b b b"
+      "b b b b b"
+      "c c c c c"
+      "d d d d d "
+      "e e e e e";
+      ;
+ 
+    }
+    @include for-normal-layout {
+      min-height: 100vh;
+      grid-template-columns: auto;
+      grid-template-rows: 5px 5px;
+      grid-template-areas:
+      "b b b b b"
+      "b b b b b"
+      "b b b b b"
+      "c c c c c"
+      "d d d d d "
+      "e e e e e";
+    }
+    @include for-wide-layout {
+      min-height: 100vh;
+      grid-template-columns: auto;
+      grid-template-rows: 50px 50px;
+      grid-template-areas:
+      "b b c c c"
+      "b b c c c"
+      "b b c c c"
+      "d d c c c"
+      "d d c c c"
+      "d d c c c"
+      "d d c c c"
+      "e e e e e"
+      "e e e e e";
+    }
+
+}
+
+.category-c {
+  grid-area: c;
+  // background-image: url("../assets/imgs/1111.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @include  for-mobile-layout {
+    background-size:cover;
+    background-position: top;
+  }
+  @include for-normal-layout {
+    background-size:cover;
+    background-position: top;
+  }
+  @include for-wide-layout {
+ 
+  }
+
+  &:hover {
+    filter: grayscale(1);
+    transition: 0.6s ease-in-out;
+
+    // box-shadow: inset 0 0 0 25px #53a7ea;
+  }
+
+}
+
+.category-a {
+  grid-area: a;
+  background-size: 100% 100%;
+}
+
+.category-b {
+  // background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/383-jir9305-jir_1.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=794b8342a8c4ad28e3f4a87483d2bfbb");
+  background-position: center;
+  background-size: cover;
+  grid-area: b;
+  @include  for-mobile-layout {
+    background-size:cover;
+    background-position: center;
+  }
+  @include for-normal-layout {
+    background-size:cover;
+    background-position: center;
+  }
+  @include for-wide-layout {
+ 
+  }
+  &:hover {
+    filter: grayscale(1);
+    transition: 0.6s ease-in-out;
+  }
+}
+
+.category-d {
+  // background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/393-mckinsey-21a3921-jir_1.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=8d214bc588282e34255fbd1e08aedb78");
+  background-size: 100% 100%;
+  grid-area: d;
+  @include  for-mobile-layout {
+    background-size:cover;
+    background-position: center;
+  }
+  @include for-normal-layout {
+    background-size:cover;
+    background-position: center;
+  }
+  @include for-wide-layout {
+ 
+  }
+  &:hover {
+    filter: grayscale(1);
+    transition: 0.6s ease-in-out;
+  }
+}
+
+.category-e {
+  // background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/383-jir9259-jir-l_1.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=d4f6458396ac8d5e2c9c63ffd7c47e16");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  grid-area: e;
+  background-position: center;
+  @include  for-mobile-layout {
+    background-size:cover;
+    background-position: center;
+  }
+  @include for-normal-layout {
+    background-size:cover;
+    background-position: center;
+  }
+  @include for-wide-layout {
+ 
+  }
+  &:hover {
+    filter: grayscale(1);
+    transition: 0.6s ease-in-out;
+  }
+}
+
+.home-categories {
+  font-size: 1.5rem;
+}
+
+.home-page-text {
+  background-color: $clr1;
+  color: $clr4;
+  position: relative;
+  
+  @include  for-mobile-layout {
+    padding: 18px;
+    font-size: rem(12px);
+    top: 25px;
+  }
+  @include for-normal-layout {
+    padding: 18px;
+    font-size: rem(16px);
+    top: 25px;
+  }
+  @include for-wide-layout {
+    padding: 22px;
+    font-size: rem(22px);
+    width: 160px;
+    top: 25px;
+
+  }
+}

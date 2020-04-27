@@ -1,0 +1,81 @@
+.screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(40, 38, 40, 0.7);
+
+  @include for-mobile-layout {
+    width: 103vw;
+    left: -283px;
+    z-index: 7;
+  }
+}
+
+.modal-search-image {
+  font-family: Lobster;
+  position: absolute;
+  z-index: 2;
+  width: calc(70vw - 200px);
+  height: 70vh;
+  background-color: white;
+  color: #64485c;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  overflow-y: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+
+  @include for-mobile-layout {
+    width: 320px;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: rem(20px);
+    input {
+      width: 80%;
+      border-radius: 6px;
+      height: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  .images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 290px;
+    padding: 10px;
+    height: 200px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      cursor: pointer;
+      width: 40px;
+      height: auto;
+    }
+  }
+}

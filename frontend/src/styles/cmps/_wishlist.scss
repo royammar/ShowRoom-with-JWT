@@ -1,0 +1,17 @@
+.wishlist {
+  min-height: 100vh;
+  .wishlist-title {
+    font-size: rem(32px);
+    width: 100vh;
+    margin: 50px;
+  }
+
+  .wishlist-txt {
+    p {
+      // font-family: Lobster;
+      font-size: rem(42px);
+      color: $clr1;
+      font-weight: bold;
+    }
+  }
+}

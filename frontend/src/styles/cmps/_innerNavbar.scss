@@ -1,0 +1,228 @@
+.inner-nav {
+  background-color: $clr1;
+  height: 72px;
+  @include for-mobile-layout {
+    align-items: flex-end;
+  }
+  .menu-btn {
+    @include for-mobile-layout {
+      justify-content: space-between;
+      background-color: transparent;
+      align-self: center;
+      border: 0px;
+      width: 55px;
+      height: 55px;
+      padding: 15px;
+    }
+    @include for-narrow-layout {
+      background-color: transparent;
+      border: 0px;
+      width: 55px;
+      height: 55px;
+      padding: 15px;
+    }
+    @include for-normal-layout {
+      display: none;
+    }
+    @include for-wide-layout {
+      display: none;
+    }
+  }
+
+  .inner-logo {
+    // padding-top: 5px;
+    padding-left: 10px;
+    font-family: Lobster;
+    color: $clr4;
+    font-size: 40px;
+    line-height: 0px;
+    position: relative;
+    bottom: 8px;
+
+    @include for-mobile-layout {
+      font-size: rem(30px);
+    }
+    @include for-normal-layout {
+    }
+    @include for-wide-layout {
+    }
+  }
+
+  .bell-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-right-side {
+    // padding-right: 15px;
+
+    .nav-texts {
+      @include for-mobile-layout {
+        .nav-text-inner {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0px;
+          align-items: center;
+
+          > * :not:first-child{
+            padding-right: 15px;
+          }
+        }
+        font-size: rem(17px);
+        display: flex;
+        flex-direction: column;
+        :not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+      @include for-normal-layout {
+        > * {
+          padding-left: 15px;
+        }
+      }
+      @include for-wide-layout {
+        > * {
+          padding-left: 15px;
+        }
+      }
+
+ 
+    }
+
+    .inner-nav-icons img {
+      width: 40px;
+      height: 40px;
+      padding:5px;
+      > * {
+        padding-left: 10px;
+      }
+      // width: rem(150px);
+    }
+    .cart {
+      display: block;
+      margin-right: 15px;
+    }
+    .inner-nav-text {
+      color: $clr4;
+      padding-right:10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .logout {
+        border: none;
+        color: white;
+        font-size: 16px;
+        background-color: inherit;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .close-btn {
+      @include for-mobile-layout {
+        display: block;
+        width: 8%;
+        height:auto;
+        margin-top: 18px;
+        margin-left:18px;
+      }
+      @include for-normal-layout {
+        display: none;
+      }
+      @include for-wide-layout {
+        display: none;
+      }
+    }
+
+    @include for-mobile-layout {
+      z-index: 6;
+      flex-direction: column;
+      justify-content: space-between;
+      background: $clr1;
+      opacity: 94%;
+
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 44vh;
+      transform: translate(100%, 0);
+      transition: transform 0.6s;
+    }
+    @include for-normal-layout {
+    }
+    @include for-wide-layout {
+    }
+
+    &.open {
+      @include for-mobile-layout {
+        transform: translate(0, 0);
+      }
+      @include for-normal-layout {
+      }
+      @include for-wide-layout {
+      }
+    }
+  }
+
+  .search {
+    z-index: 3;
+    position: relative;
+    input {
+      height: 40px;
+      width: 400px;
+      top: 20px;
+    }
+    button {
+      height: 30px;
+      bottom: 0px;
+      left: -105px;
+      font-size: 14px;
+    }
+
+    @include for-mobile-layout {
+      display: none;
+    }
+    @include for-normal-layout {
+      display: none;
+    }
+    @include for-wide-layout {
+      display: block;
+    }
+  }
+  .notification-badge {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-weight: bolder;
+    background-color: rgb(70, 160, 75);
+    border-radius: 100px;
+    color: $clr4;
+    text-align: center;
+    line-height: 15px;
+    width: 18px;
+    height: 18px;
+    padding: 2px 5px;
+    font-size: 12px;
+    z-index: 23;
+    font-weight: bolder;
+  }
+
+  .notification-seller-badge {
+    position: absolute;
+    top: 10px;
+    right: 98px;
+    background-color: rgb(70, 160, 75);
+    border-radius: 100px;
+    color: $clr4;
+    text-align: center;
+    line-height: 15px;
+    width: 18px;
+    height: 18px;
+    padding: 2px 5px;
+    font-size: 12px;
+    z-index: 23;
+    font-weight: bolder;
+  }
+}

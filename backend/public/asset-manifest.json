@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0cf5dcf.chunk.css",
+    "main.js": "/static/js/main.bc334f51.chunk.js",
+    "main.js.map": "/static/js/main.bc334f51.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d9f9d609.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d9f9d609.js.map",
+    "static/js/2.d21542aa.chunk.js": "/static/js/2.d21542aa.chunk.js",
+    "static/js/2.d21542aa.chunk.js.map": "/static/js/2.d21542aa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a234e393bec2ec3ffd29d2bdc58f034c.js": "/precache-manifest.a234e393bec2ec3ffd29d2bdc58f034c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c0cf5dcf.chunk.css.map": "/static/css/main.c0cf5dcf.chunk.css.map",
+    "static/js/2.d21542aa.chunk.js.LICENSE": "/static/js/2.d21542aa.chunk.js.LICENSE",
+    "static/media/002-heart.png": "/static/media/002-heart.c096fbfc.png",
+    "static/media/1111.jpg": "/static/media/1111.bba3957e.jpg",
+    "static/media/global.scss": "/static/media/ZCOOLQingKeHuangYou-Regular.41e0c404.ttf",
+    "static/media/coverPhoto.jpg": "/static/media/coverPhoto.8eea6d3b.jpg",
+    "static/media/emptyCart.png": "/static/media/emptyCart.888b8b6a.png",
+    "static/media/hat.jpg": "/static/media/hat.06749834.jpg",
+    "static/media/insta.png": "/static/media/insta.07e509ef.png",
+    "static/media/logo-innerNav.png": "/static/media/logo-innerNav.4bb0d54b.png",
+    "static/media/logo-red.png": "/static/media/logo-red.202463ec.png",
+    "static/media/men.jpg": "/static/media/men.15fc2f33.jpg",
+    "static/media/menu.png": "/static/media/menu.40056ddb.png",
+    "static/media/shoes.jpg": "/static/media/shoes.17736651.jpg",
+    "static/media/youtube.png": "/static/media/youtube.a28b4fa7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9f9d609.js",
+    "static/js/2.d21542aa.chunk.js",
+    "static/css/main.c0cf5dcf.chunk.css",
+    "static/js/main.bc334f51.chunk.js"
+  ]
+}
