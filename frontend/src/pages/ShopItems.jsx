@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { loadItems } from '../actions/ItemActions'
 import Filter from '../cmps/items/Filter'
-
+import Loading from '../cmps/Loading'
 import ItemsList from '../cmps/items/ItemList'
 import emptyCart from '../styles/assets/imgs/emptyCart.png'
 import InnerNavBar from '../cmps/InnerNavBar';
@@ -139,6 +139,16 @@ class ShopItems extends Component {
 
 
 
+  clearFilters=()=>{
+    this.setState({filterBy:{
+      size: [],
+      gender: [],
+      itemOwner: [],
+      price: ''
+    }})
+  }
+
+
 
 
   render() {
@@ -146,20 +156,21 @@ class ShopItems extends Component {
     return (
       <React.Fragment>
         <InnerNavBar isOwner={this.state.isOwner}></InnerNavBar>
-        <Filter filterBy={this.state.filterBy} selectFilter={this.selectFilter}></Filter>
+        <Filter clearFilters={this.clearFilters} history={this.props.history} filterBy={this.state.filterBy} selectFilter={this.selectFilter}></Filter>
         <div className="flex grow">
           {items.length !== 0 ? <ItemsList items={items}>
-          </ItemsList> :
-            <div className="noitems flex grow">
-              <img src={emptyCart}></img>
-              <div className="noitems-txt">
-                <p className="oops">OOPS!</p>
-                <p className="noitems-p">There’re no products matching your search, we’ll do better next time😎 </p>
-                <Link to={`/item`}> <button className="btn1">Back to the shop</button></Link>
-              </div>
+          </ItemsList> :<Loading />
+            // <div className="noitems flex grow">
+            //   <img src={emptyCart}></img>
+            //   <div className="noitems-txt">
+            //     <p className="oops">OOPS!</p>
+            //     <p className="noitems-p">There’re no products matching your search, we’ll do better next time😎 </p>
+            //     <Link to={`/item`}> <button className="btn1">Back to the shop</button></Link>
+            //   </div>
 
 
-            </div>}
+            // </div>
+            }
         </div>
         <Footer></Footer>
       </React.Fragment>)

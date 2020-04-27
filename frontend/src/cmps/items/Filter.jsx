@@ -65,7 +65,16 @@ class Filter extends Component {
   // }
 
   onClearFilter = () => {
+    this.setState({
+      isToggleSize: '',
+      isToggleGender: '',
+      isToggleShop: '',
+      isTogglePrice: 'hide',
+      priceValue: 0
+    })
     this.props.loadItems();
+    this.props.clearFilters()
+    this.props.history.push('/item')
   }
 
 
